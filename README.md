@@ -47,6 +47,7 @@ https://github.com/GameServerManagers/LinuxGSM
 #### Usage:  
   
 > Download the armamm.sh file, open it and may edit the paths  
+> The Script doesnt care which it is located  
 > ** CURRENTLY ONLY WORKS FOR 1 SERVER, so you need one script for each Server **  
 > Change the file permissions, so it can be executed  
 > Then simply run *./armamm.sh*  
