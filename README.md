@@ -50,7 +50,7 @@ https://github.com/GameServerManagers/LinuxGSM
 > Change the file permissions, so it can be executed 
 > Then simply run *./armamm.sh*  
   
-> To download mods:  
+> To Download Mods:  
 >> ./armamm.sh dl | ./armamm.sh download  
   
 > To Manage .bikey Files:  
