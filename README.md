@@ -39,8 +39,8 @@ https://github.com/GameServerManagers/LinuxGSM
 
 #### Found Bugs or have improvements?
 
-> Please use the "Issues" (https://github.com/Deadalus3010/armamm/issues) section!
+Please use the "Issues" (https://github.com/Deadalus3010/armamm/issues) section!
 
 ##### Thats all
 
-> Thanks for using the script!
+Thanks for using the script!
