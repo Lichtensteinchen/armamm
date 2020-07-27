@@ -57,7 +57,7 @@ https://github.com/GameServerManagers/LinuxGSM
   
 > To Manage .bikey Files:  
 >> Add: ./armamm.sh ak | ./armamm.sh addkeys  
->> Remove: ./armamm.sh dk | ./armamm.sh removekeys  
+>> Remove: ./armamm.sh rk | ./armamm.sh removekeys  
   
 > To Update Mods:  
 >> Update manually: ./armamm.sh up | ./armamm.sh updatemods  
