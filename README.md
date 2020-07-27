@@ -5,7 +5,8 @@ https://github.com/GameServerManagers/LinuxGSM
 
 *This is an independent project for lgsm and I am not associated with it.*
 
-> Current Version: 0.7 alpha
+> Current Version: 0.7 alpha  
+> This script still has a few problems, when those are fixed, I will release the script  
 
 ## TL:DR
   
