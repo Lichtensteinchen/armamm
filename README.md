@@ -47,7 +47,7 @@ https://github.com/GameServerManagers/LinuxGSM
   
 > Download the armamm.sh file, open it and may edit the paths  
 > ** CURRENTLY ONLY WORKS FOR 1 SERVER, so you need one script for each Server **  
-> Change the file permissions, so it can be executed 
+> Change the file permissions, so it can be executed  
 > Then simply run *./armamm.sh*  
   
 > To Download Mods:  
