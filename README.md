@@ -1,6 +1,6 @@
 # armamm
-ArmA 3 Linux Server Mod Manager for lgsm (Linux Game Server Manager)
-https://linuxgsm.com/
+ArmA 3 Linux Server Mod Manager for lgsm (Linux Game Server Manager)  
+https://linuxgsm.com/  
 https://github.com/GameServerManagers/LinuxGSM
 
 *This is an independent project for lgsm and I am not associated with it.*
