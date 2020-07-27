@@ -8,7 +8,7 @@ https://github.com/GameServerManagers/LinuxGSM
 > Current Version: 0.7 alpha
 
 ## TL:DR
-
+  
 > Downloads mods   
 > Manage .bikey Files  
 > Update mods  
@@ -17,7 +17,7 @@ https://github.com/GameServerManagers/LinuxGSM
   
 1. *Download Mods*   
 > Uses the steamcmd which also downloads the server  
-> Downloads the mods into the steamcmd workshop directory  
+> Downloads the mods into the steamcmd workshop directory, lowercases them afterwards  
 > Symlinks the mods inside the arma 3 servers mods directory  
 > How it works:  
 > You need to input the workshop id of the arma 3 mod  
@@ -37,10 +37,40 @@ https://github.com/GameServerManagers/LinuxGSM
 > The other one is made to use it with cron  
 > So you can like start the script each day 5am and the script just checks each mod if there is an update avialable  
   
-#### Found Bugs or have improvements?  
+4. *Count Mods*  
+> Counts all downloaded Mods and .bikey Files  
+
+5. *Lowercase*
+> Lowercases all Mods inside the steam workshop directory  
+  
+#### Usage:  
+  
+> Download the armamm.sh file, open it and may edit the paths  
+> ** CURRENTLY ONLY WORKS FOR 1 SERVER, so you need one script for each Server **  
+> Change the file permissions, so it can be executed 
+> Then simply run *./armamm.sh*  
+  
+> To download mods:  
+>> ./armamm.sh dl | ./armamm.sh download  
+  
+> To Manage .bikey Files:  
+>> Add: ./armamm.sh ak | ./armamm.sh addkeys  
+>> Remove: ./armamm.sh dk | ./armamm.sh removekeys  
+  
+> To Update Mods:  
+>> Update manually: ./armamm.sh up | ./armamm.sh updatemods  
+>> Cronupdate: ./armamm.sh cup | ./armamm.sh cronupdate  
+  
+> To Count Mods:  
+>> ./armamm.sh co | ./armamm.sh count  
+  
+> To Lowercase Mods:  
+>> ./armamm.sh lo | ./armamm.sh lowercase  
+
+##### Found Bugs or have improvements?  
   
 Please use the "Issues" (https://github.com/Deadalus3010/armamm/issues) section!  
   
-##### Thats all  
+###### Thats all  
   
 Thanks for using the script!  
