@@ -66,6 +66,9 @@ https://github.com/GameServerManagers/LinuxGSM
   
 > To Lowercase Mods:  
 >> ./armamm.sh lo | ./armamm.sh lowercase  
+  
+> Running the script without any or wrong parameters  
+>> Shows the Help menu  
 
 ##### Found Bugs or have improvements?  
   
