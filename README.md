@@ -69,8 +69,8 @@ To Count Mods:
 To Lowercase Mods:  
 > ./armamm.sh lo | ./armamm.sh lowercase  
   
-Running the script without any or wrong parameters or with h / help
-> Shows the Help menu  
+Running the script without any or wrong parameters or with h / help:
+Shows the Help menu  
 > ./armamm.sh h | ./armamm.sh help  
 
 ##### Found Bugs or have improvements?  
