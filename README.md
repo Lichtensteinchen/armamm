@@ -41,7 +41,7 @@ So you can like start the script each day 5am and the script just checks each mo
 4. *Count Mods*  
 Counts all downloaded Mods and .bikey Files  
 
-5. *Lowercase*
+5. *Lowercase*  
 Lowercases all Mods inside the steam workshop directory  
   
 #### Usage:  
