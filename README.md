@@ -7,6 +7,8 @@ https://github.com/GameServerManagers/LinuxGSM
 
 > Current Version: 1.0
 
+Requirements: GNU bash, version 4.1.5 and above
+
 ## TL:DR
   
 Downloads mods   
