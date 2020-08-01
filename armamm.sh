@@ -121,7 +121,7 @@ function countmods() {
 function readmods() {
 
 	local -n workshopid=$1
-    typeset -i modid=0
+   	typeset -i modid=0
 
 	echo -e "\n   Please enter the workshop content id..."
 	echo -e "   https://steamcommunity.com/sharedfiles/filedetails/?l=english&id="$(tput setaf 2)"450814997"$(tput setaf 7)"(cba3 example)"
@@ -146,9 +146,9 @@ function readmods() {
 		workshopid+=($modid)
 	done
 
-    #Deleting the exit call (last index) from the array
+	#Deleting the exit call (last index) from the array
 	#Best solution I had
-    unset workshopid[${#workshopid[*]}-1]
+	unset workshopid[${#workshopid[*]}-1]
 }
 
 #	
@@ -160,7 +160,7 @@ function dlworkshop() {
 
 	#Launches the readmods() method
 	#Grabs the workshopid array from readmods()
-    readmods workshop
+	readmods workshop
 
 	echo -e "\n   $(tput setaf 6)Now we are gonna download your mods..."
 	echo -e "   $(tput setaf 5)and afterwards we check if some files / folders are lowercase...$(tput setaf 7)"
@@ -203,7 +203,7 @@ function addkeys() {
 
 	echo -e "\n   Which .bikeys do you want to add?\n   Only needed when you set \"verifySignatures = 2\" in \"arma3server.server.cfg\"\n   Answer with 1 (yes) / 2 (no)\n"
 
-    countmods
+	countmods
 
 	#We check the workshop path and only write the workshop mods inside this array
 	readarray -d '' wppdir_ar < <(find $workshoppath -mindepth 1 -maxdepth 1 -type d -print0)
@@ -246,16 +246,14 @@ function addkeys() {
 		elif [[  "$yn" == "1" ]]
 		then
 
-            cp -u ${bikey_ar[$i]} $keypath #-u -> copy only when the SOURCE file is newer than the destination file or when the destination file is missing
+            		cp -u ${bikey_ar[$i]} $keypath #-u -> copy only when the SOURCE file is newer than the destination file or when the destination file is missing
 
 			#Here we catch the cp response, to check if errors occured
 			if [ $? -ne 0 ]
 			then
 				echo -e "   $(tput setaf 1)ERROR:$(tput setaf 7) Couldnt copy the ${bikey_ar[$i]} file!"
 			fi
-
 		fi
-
 		i=i+1
 	done
 }
@@ -266,7 +264,7 @@ function addkeys() {
 #
 function removekeys() {
 
-    echo -e "\n   Which .bikeys do you want to remove?\n   Only needed when you set \"verifySignatures = 2\" in \"arma3server.server.cfg\"\n   $(tput setaf 1)DO NOT$(tput setaf 7) remove the a3.bikey (if there is any)   \n   Answer with 1 (yes = removes the bikey from the keys directory) / 2 (no)\n"
+	echo -e "\n   Which .bikeys do you want to remove?\n   Only needed when you set \"verifySignatures = 2\" in \"arma3server.server.cfg\"\n   $(tput setaf 1)DO NOT$(tput setaf 7) remove the a3.bikey (if there is any)   \n   Answer with 1 (yes = removes the bikey from the keys directory) / 2 (no)\n"
 
 	#We write all the .bikey paths in the kbikey_ar array | k = keys direcotory
 	#We also exclude the "a3.bikey", this is an important server file, without it, no one can join your server
@@ -303,7 +301,7 @@ function removekeys() {
 			done
 		elif [[  "$yn" == "1" ]]
 		then
-            rm ${kbikey_ar[$i]} #Here we delete the .bikey file, bye bye, you wont be missed :) (hopefully)
+			rm ${kbikey_ar[$i]} #Here we delete the .bikey file, bye bye, you wont be missed :) (hopefully)
 		fi
 		i=i+1
 	done
