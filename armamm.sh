@@ -175,11 +175,11 @@ function dlworkshop() {
 		#Here we download the workshop mods
 		"${steamcmd}" +login anonymous +workshop_download_item "${gameid}" "${workshop[$i]}" validate +quit
 
-        #Symlink mods into $modpath directory
-        #This saves huge amount of disk space
-        #Because, for each arma server you use, you only need to have a link to the modfiles inside the /mods directory
-        #And no mod files, e.g. 5 servers use the same mod folder, instead of having 5 different unique mod folders
-        ln -s "$workshoppath${workshop[$i]}" "$modpath"
+		#Symlink mods into $modpath directory
+		#This saves huge amount of disk space
+		#Because, for each arma server you use, you only need to have a link to the modfiles inside the /mods directory
+		#And no mod files, e.g. 5 servers use the same mod folder, instead of having 5 different unique mod folders
+		ln -s "$workshoppath${workshop[$i]}" "$modpath"
 
 		#Now we add one, so we download the next item
 		let i+=1
