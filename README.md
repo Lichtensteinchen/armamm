@@ -5,7 +5,7 @@ https://github.com/GameServerManagers/LinuxGSM
 
 *This is an independent project for lgsm and I am not associated with it.*
 
-> Current Version: 1.0
+> Current Version: 1.1
 
 Requirements: GNU bash, version 4.1.5 and above
 
