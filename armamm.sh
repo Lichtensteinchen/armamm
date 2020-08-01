@@ -163,7 +163,7 @@ function dlworkshop() {
 	readmods workshop
 
 	echo -e "\n   $(tput setaf 6)Now we are gonna download your mods..."
-	echo -e "   $(tput setaf 5)and afterwards we check if some files / folders are lowercase...$(tput setaf 7)"
+	echo -e "   $(tput setaf 5)and afterwards we lowercase all files / folders...$(tput setaf 7)"
 
 	typeset -i i=0 max=${#workshop[*]} j=${#workshop[*]}-1
 
