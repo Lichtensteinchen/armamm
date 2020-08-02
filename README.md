@@ -64,7 +64,7 @@ To Update Mods:
 > Update manually: ./armamm.sh up | ./armamm.sh updatemods  
 > Cronupdate: ./armamm.sh cup | ./armamm.sh cronupdate  
 Example cron entry:  
-> 0 8 * * * /home/lgsm/arma/armamm.sh cup >> /home/lgsm/cron/arma/\`date +\%y\%m\%d\`_armamm.sh_cronupdate.log
+> 0 8 * * * /home/lgsm/arma/armamm.sh cup >> /home/lgsm/cron/arma/\`date +\%y\%m\%d\`_armamm.sh_cronupdate.log  
 > Each day, at 8am, cron will run the script and writes the output in a file with the current year, month, day in its filename
 
 
