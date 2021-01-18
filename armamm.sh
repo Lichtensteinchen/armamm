@@ -246,8 +246,8 @@ function dlworkshop() {
 	#Grabs the workshopid array from readmods()
     readmods workshop
 
-	echo -e "\n   $(tput setaf 6)Now we are gonna download your mods..."
-	echo -e "   $(tput setaf 5)and afterwards we check if some files / folders are lowercase...$(tput setaf 7)"
+	echo -e "\n   $(tput setaf 6)Now we are going download your mods..."
+	echo -e "   $(tput setaf 5)and afterwards we check if some files / folders are uppercase...$(tput setaf 7)"
 
 	typeset -i i=0 max=${#workshop[*]} j=${#workshop[*]}-1
 
